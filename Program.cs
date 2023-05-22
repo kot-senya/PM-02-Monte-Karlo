@@ -26,7 +26,7 @@ namespace монте_карло
             Console.WriteLine("Результат pi = {0}", pi);
             Console.WriteLine("Точно pi = {0}", Math.PI);
         }
-        static double findS()
+        static void findS()
         {
             Random rnd = new Random(); //создание нового рандома
             int n = 10000000;  //количество точек
@@ -43,7 +43,7 @@ namespace монте_карло
                 }
             }
             double S = a * b * k / n;
-            return S;
+            Console.WriteLine("S фигуры = {0}", S);
         }
         static void task1(int n)
         {
@@ -165,7 +165,6 @@ namespace монте_карло
                     break;
                 case 2:
                     findS();
-                    Console.WriteLine("Результат s = " + s);
                     break;
                 case 3:
                     int n = 10000000;
